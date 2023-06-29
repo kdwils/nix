@@ -17,11 +17,5 @@
   boot.loader.grub.enable = false;
   boot.loader.generic-extlinux-compatible.enable = true;
 
-  programs.git = {
-    enable = true;
-    userName = "my_git_username";
-    userEmail = "my_git_username@gmail.com";
-  };
-
   system.stateVersion = "23.05";
 }
