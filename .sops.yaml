@@ -1,0 +1,18 @@
+keys:
+  - &local age180jw0m22mhucnw8n3cmuycht4m44mdjux3ghcj7lv9pq2a6rmp3qmy04x3
+creation_rules:
+  - path_regex: hosts/kyle/secrets(/[^/]+)?\.yaml$
+    key_groups:
+      - age:
+          - *local
+          - age1z70kvugxl62g7q2yfuqml9aktd5nfyv2hmlrvmj4x5mhlw3a7v6ss0vawj
+  - path_regex: networking/secrets(/[^/]+)?\.yaml$
+    key_groups:
+      - age:
+          - *local
+          - age1z70kvugxl62g7q2yfuqml9aktd5nfyv2hmlrvmj4x5mhlw3a7v6ss0vawj
+  - path_regex: users/kyle/secrets(/[^/]+)?\.yaml$
+    key_groups:
+      - age:
+          - *local
+          - age1z70kvugxl62g7q2yfuqml9aktd5nfyv2hmlrvmj4x5mhlw3a7v6ss0vawj
